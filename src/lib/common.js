@@ -1,4 +1,10 @@
+import router from "../router/index";
 export default {
+    // 系统和平台跳转
+    checkLoginHref(path) {
+        let oldUrl = router.history.current.path;
+        window.location.href = `${ipConfigPingTai}/sso/oauth2/authorize?redirect_uri=${ipPath}?path=${path + '*' + oldUrl}&response_type=code&client_id=jssClientId`
+    },
     // 时间戳转换日期格式
     formatDate(date) {
         var date = new Date(date);

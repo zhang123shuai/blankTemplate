@@ -12,7 +12,7 @@
 //     //     target: "http://192.168.130.156:8089",
 //     //     ws: true,
 //     //     changeOrigin: true, //允许跨域
-//     //     pathRewrie: {
+//     //     pathRewrite: {
 //     //       "^/sso": "", //请求的时候使用这个api就可以
 //     //     },
 //     //   }
